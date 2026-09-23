@@ -1,6 +1,6 @@
 # CLAUDE.md — branchLeft control-plane
 
-The try-it-now control plane on ops1: the operator console, the tenant portal, Zitadel identity configuration, and the drain and backup workers. One responsibility: operating the try-it-now estate, not running any tenant's Ghost instance itself.
+The try-it-now control plane, run on the platform's organisation and control host: the operator console, the tenant portal, Zitadel identity configuration, and the drain and backup workers. One responsibility: operating the try-it-now estate, not running any tenant's Ghost instance itself.
 
 **This repo is public. Engineer as if public at all times**: no secrets, no tenant-identifying data, no internal-only shorthand, ever — in code, comments, commit messages, or CI logs. Sensitive operational detail (credentials, host specifics, incident detail) belongs in the private `ops-docs` repo, never here.
 
