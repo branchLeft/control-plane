@@ -4,7 +4,13 @@
 # resolved: an owner without write access is dropped silently, with no error
 # and no warning on the pull request. "The file says so" is not evidence.
 #
-# The shared line above stays. SYNC-1 is `contains`, not `identical`: a repo
-# may add to this file and may never drop a shared line, and rewriting that
-# line in place is dropping it.
+# SYNC-1 checks this file as `suffix`, not `contains`: the escape-hatch lines
+# at the end must stay the file's last lines, in order. Add repo lines above
+# them only; a line below them, or between them, can take over a hatch.
 * @branchLeft/branchleft-admin
+/.standards-db-tooling   @branchLeft/branchleft-admin
+/.standardsignore        @branchLeft/branchleft-admin
+/.standards.mode         @branchLeft/branchleft-admin
+/.docs-lint*             @branchLeft/branchleft-admin
+/tools/floors.tsv        @branchLeft/branchleft-admin
+/.github/                @branchLeft/branchleft-admin
